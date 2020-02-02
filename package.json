@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/seunghaekim/automatic_insurrection#readme",
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.2.3",
     "nuxt": "^2.11.0"
   },
   "devDependencies": {

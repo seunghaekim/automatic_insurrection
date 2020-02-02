@@ -1,4 +1,2 @@
-node_modules
-Gemfile.lock
-.nuxt
-dist/*
+.nuxt/*
+node_modules/*
