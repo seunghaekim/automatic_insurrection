@@ -86,10 +86,25 @@ get '/stylesheet.css' do
   sass :stylesheet
 end
 
+get '/main.js' do
+  content_type 'text/javascript', :charset => 'utf-8'
+end
+
 get '/' do
   @lists=lists
   @title=title
-  @sentences=[recognize,do_something,in_the,joke,break_things,this_call,whats_needed,every_what,necessary,symbols].shuffle
+  @sentences=[
+    recognize,
+    do_something,
+    in_the,
+    joke,
+    break_things,
+    this_call,
+    whats_needed,
+    every_what,
+    necessary,
+    symbols
+  ].shuffle
   @pull_quote=@sentences[0]
   @shuffled_sentences=@sentences.shuffle
   @babble=@shuffled_sentences[0,4].join(" ")
